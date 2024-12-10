@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '6878904164:AAGiOYVtLe4c-Rmkn1HhGLMa6YV4fck
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6046055058').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/Sandymeami") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002433610423'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '-1002186322616')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+KMWdbBYF9SdjZDBl')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002311345762').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -77,7 +77,7 @@ REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
+FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '60'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 PORT = environ.get('PORT', '5000')
